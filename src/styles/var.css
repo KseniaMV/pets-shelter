@@ -1,0 +1,37 @@
+:root{
+    --white-bg: rgb(255,255,255);
+    --grey-bg: rgb(246,246,246);
+    --title-color: rgb(84,84,84);
+    --text-color: rgb(76,76,76);
+    --text-color-primery: rgb(241,205,179);
+    --white-text-color: rgb(246,246,246);
+    --grey-text-color: rgb(205,205,205);
+    --button-color-primary: rgb(241,205,179);
+    --button-text-color: rgb(41,41,41);
+    --title-font: Georgia;
+    --content-font: Arial;
+}
+
+@font-face{
+    font-family: Georgia;
+    src: url(../assets/fonts/georgia.ttf);
+
+}
+
+@font-face{
+    font-family: GeorgiaLight;
+    src: url(../assets/fonts/georgia-light.ttf);
+
+}
+
+@font-face{
+    font-family: Arial;
+    src: url(../assets/fonts/arial.ttf);
+
+}
+
+@font-face{
+    font-family: ArialLight;
+    src: url(../assets/fonts/arial-light.ttf);
+
+}

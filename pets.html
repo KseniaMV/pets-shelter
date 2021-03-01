@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/pets.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+    <title>Our pets</title>
+</head>
+<body>
+    <section class="section section__our-pets">
+        <div class="content-conteiner content-our-pets">
+            <header class="header our-pets__header">
+                <div class="header__logo">
+                    <h1 class="logo__title our-pets__logo-title">Cozy House</h1>
+                    <h3 class="logo__subTitle our-pets__logo-subTitle">Shelter for pets in Boston</h3>
+                </div>
+                <nav class="header__menu">
+                    <ul class="menu__list menu-pets">
+                        <li class="menu__item menu-pets__item"><a class="menu__link our-pets__link" href="index.html#about"> About the shelter</a></li>
+                        <li class="menu__item menu-pets__item"><a class="menu__link our-pets__link" href="index.html#donation">Help the shelter</a></li>
+                        <li class="menu__item menu-pets__item"><a class="menu__link our-pets__link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <button class="burger__menu our-pets__burger-menu"></button>
+            </header>
+            <main class="our-pets__main">
+                <h3 class="our-pets__title">Our friends who <br>are looking for a house</h3>
+                <div class="our-pets__slider">
+                    <div class="slider__images our-pets__slider__images"></div>
+                </div>
+                <div class="pagination"> 
+                    <button class="pagination__button first-page pagination__inactive"></button>               
+                    <button class="pagination__button page-back pagination-left pagination__inactive"></button>
+                    <div class="page-number">1</div>
+                    <button class="pagination__button page-next pagination-right"></button>
+                    <button class="pagination__button last-page"></button>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer class="footer our-pets__footer">
+        <div class="content-conteiner content-footer" id="contacts">
+            <div class="footer__questions">
+                <h2 class="questions__title">For questions and suggestions</h2>
+                <a class="questions__email" href="mailto:email@shelter.com">email@shelter.com</a>
+                <a class="questions__tel" href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+            </div>
+        <div class="address">
+            <h2 class="address_title">We are waiting for your visit</h2>
+            <a class="address__part1" href="https://goo.gl/maps/Qp4DVbeqzuDbCcDV6">1 Central Street, Boston (entrance from the store)</a>
+            <a class="address__part2" href="https://goo.gl/maps/nxn3cJgBHQsheXWa7">18 South Park, London </a>
+        </div>
+        </div>
+        </footer>
+       <!--popup-->
+   <div class="blockBG"></div>
+   <div class="pets-info">
+    <button class="popup__button pets-page__popup__button"></button>
+       <div class="pets-image"></div>
+       <div class="pets-description">
+           <h3 class="popup__pet-name"></h3>
+           <h4 class="popup__pet-breed">r</h4>
+           <div class="popup__pet-description">
+               <p class="description-text"></p>
+               <p class="pets-addInfo">
+                   <span class="addInfo--bold">Age:</span>
+                   <span class="pets-age"></span>
+                </p>
+               <p class="pets-addInfo">
+                   <span class="addInfo--bold">Inoculations:</span>
+                   <span class="inoculations"></span>
+                </p>
+               <p class="pets-addInfo">
+                   <span class="addInfo--bold">Diseases:</span>
+                   <span class="diseases"></span>
+                </p>
+               <p class="pets-addInfo">
+                   <span class="addInfo--bold">Parasites:</span>
+                   <span class="parasites"></span>
+                </p>
+           </div>
+       </div>
+   </div>
+<!--end popup-->
+<script src="src/js/index.js"></script>
+<script src="src/js/pets.js"></script>
+</body>
+</html>

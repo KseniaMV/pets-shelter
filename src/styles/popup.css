@@ -1,0 +1,208 @@
+.blockBG{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(41,41,41,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 5;
+}
+
+.pets-info{
+    width: 70%;
+    height: 500px;
+    background-color: var(--white-bg);
+    border-radius: 9px;
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: calc(50vh - 250px);
+    left: 15%;
+    z-index: 10;
+}
+
+.popup__button{
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid var(--button-color-primary);
+    background-image: url(../assets/icons/close.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -52px;
+    left: 99%;
+    z-index: 10;
+}
+
+.pets-page__popup__button{
+    background-image: url(../assets/icons/close.png);
+}
+
+.pets-image{
+    width: 45%;
+    height: 100%;
+    margin-right: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 450px;
+}
+
+.pets-description{
+    width: 40%;
+    height: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.popup__pet-name{
+    width: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 35px;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    letter-spacing: 1.6px;
+}
+
+.popup__pet-breed{
+    width: auto;
+    height: 23px;
+    text-align: left;
+    font-size: 20px;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    letter-spacing: 1.6px;
+    margin-bottom: 30px;
+}
+
+.popup__pet-description{
+    width: 100%;
+    height: 60% ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
+}
+
+.description-text{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: var(--title-font);
+    font-size: 16px;
+    text-align: left;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    color: var(--text-color);
+}
+
+.pets-addInfo{
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    font-size: 16px;
+    position: relative;
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+
+.pets-addInfo::before{
+    content: "";
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(10px - 2px);
+    border-radius: 100%;
+    background-color: rgb(241, 205, 179);
+}
+
+.addInfo--bold{
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+@media screen and (max-width: 1100px){ 
+    .pets-info{
+        width: 80%;
+        left: 10%; 
+    }
+
+    .popup__pet-name{
+        font-size: 26px;
+    }
+
+    .pets-addInfo{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 385px){ 
+    .blockBG{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pets-image{
+        display: none;
+    }
+
+    .pets-info{
+        width: 70%;
+        height: auto;
+        padding-top: 20px;
+        left: 15%;
+    }
+
+    .pets-description{
+        width: 220px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .description-text{
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+
+}
